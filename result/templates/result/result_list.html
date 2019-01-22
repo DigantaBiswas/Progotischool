@@ -1,0 +1,30 @@
+{%extends 'noticeboard/base.html'%}
+{%load static%}
+
+{%block content%}
+<div class="container-fluid">
+	<div class="row mt-2">
+		<div class="col-3 offset-4">
+			<form class="navbar-form navbar-left" method="get" action="{% url 'result_search_url'  %}" role="search"> {% csrf_token %} 
+			  <div class="form-group">
+			    <input type="text" class="form-control" placeholder="Search" name="search">
+			  </div>
+			  <button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+	</div>
+	<div class="row">
+{%for result in results%}
+		<div class="col-sm-4 mt-2">
+		    <div class="card">
+		      <div class="card-body">
+		        <h5 class="card-title">{{result.result_of}}</h5>
+		        <p>Publishd On: {{result.upload_date}}</p>
+		        <a href="{%url 'download_result' path=result.file %}" class="btn btn-primary">Click Here To Download</a>
+		      </div>
+		    </div>
+		</div>
+{%endfor%}
+	</div>
+</div>
+{%endblock%}

@@ -1,0 +1,24 @@
+{%extends 'noticeboard/base.html'%}
+{%load static%}
+
+{%block content%}
+
+<div class="container-fluid">
+	<div class="row">
+{%for notice in notices%}
+		<div class="col-sm-4 mt-2">
+		    <div class="card">
+		      <div class="card-body">
+		        <h5 class="card-title">{{notice.title}}</h5>
+		        <p>Publishd On: {{notice.upload_date}}</p>
+		        <p class="card-text">{{ notice.description|slice:":70" }}</p>
+		        <a href="{%url 'notice_detail_url' slug=notice.slug %}" class="btn btn-primary">See Detail Notice</a>
+		      </div>
+		    </div>
+		  </div>
+{%endfor%}
+	</div>
+</div>
+
+
+{%endblock%}

@@ -1,0 +1,40 @@
+{%extends 'noticeboard/base.html'%}
+{%load static%}
+
+{%block content%}
+
+<div class="container-fluid">
+	<div class="title_notification">
+		<div class="row">
+			<div class="col text-center">
+				<h1>{{notice.title}}</h1>
+				<p>Uploaded: {{notice.upload_date}}</p>
+				<p>Valid till: {{notice.valid_till}}</p>
+			</div>
+		</div>
+	</div>
+	{%if notice.picture%}
+	<div class="image_notification">
+		<div class="row ">
+			<div class="col-9 mx-auto">
+				<img src="{{notice.picture.url}}" class="img-thumbnail mt-5" alt="Responsive image" style="height:80%; width: 100%">
+			</div>
+		</div>
+	</div>
+	{%endif%}
+
+	
+	<div class="notice_detail">
+		<div class="row">
+			<div class="col-10 offset-1 text-center">
+				<h3>Description:</h3>
+				<p>{{notice.description|linebreaksbr}}</p>
+	{%if notice.attachment%}
+				<a href="{%url 'download_url' path=notice.attachment%}">Download</a>
+			</div>
+		</div>
+	</div>
+	{%endif%}
+</div>
+
+{%endblock%}

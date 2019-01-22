@@ -1,0 +1,101 @@
+body{
+	background-color: black;
+
+
+}
+
+nav{
+	background-image: url("background4.jpeg");
+}
+
+
+.detail{
+	background-image:url("background4.jpeg");
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+}
+
+.footer{
+	text-align: center;
+	background-image: url("footerback3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: green;
+	
+}
+
+.image_notification{
+	background-image:url("background4.jpeg");
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.title_notification{
+	background-image:url("background4.jpeg");
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.notice_detail{
+	background-image:url("background4.jpeg");
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	opacity: 0.8;
+}
+
+.noice_last{
+	background-image:url("background4.jpeg");
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
