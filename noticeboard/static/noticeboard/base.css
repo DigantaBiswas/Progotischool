@@ -1,7 +1,6 @@
-body{
-	background-color: black;
-
-
+* {
+   font-size:14px;
+   font-family: serif;
 }
 
 nav{
@@ -50,6 +49,7 @@ nav{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	opacity: 0.8;
+
 }
 
 .noice_last{

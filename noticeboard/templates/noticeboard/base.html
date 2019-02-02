@@ -6,7 +6,9 @@
 	<title>	
 	</title>
 	<link rel="stylesheet" href="{% static 'noticeboard/base.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'noticeboard/normalizer.css' %}" type="text/css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
 
@@ -18,9 +20,9 @@
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 	    <div class="navbar-nav">
-	      <a class="nav-item nav-link" href="{%url 'home_url'%}">Home <span class="sr-only">(current)</span></a>
-	      <a class="nav-item nav-link" href="{%url 'notice_list_url'%}">Notices</a>
-	      <a class="nav-item nav-link" href="{%url 'result_url'%}">Results</a>
+	      <a class="nav-item nav-link" href="{%url 'home_url'%}"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+	      <a class="nav-item nav-link" href="{%url 'notice_list_url'%}"><i class="fas fa-bell"></i> Notices</a>
+	      <a class="nav-item nav-link" href="{%url 'result_url'%}"><i class="fas fa-poll-h"></i> Results</a>
 	      <a class="nav-item nav-link disabled" href="#">Disabled</a>
 	    </div>
 	  </div>
