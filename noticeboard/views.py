@@ -17,9 +17,6 @@ def notice_detail(request, slug):
 
 
 
-def home_view(request):
-    notice = Notice.objects.last()
-    return render(request, 'noticeboard/landing_page.html',{'notice':notice})
 
 
 def download_view(request, path):

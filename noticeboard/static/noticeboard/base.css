@@ -1,45 +1,75 @@
-* {
-   font-size:14px;
+html {
+    /*position: relative;
+    min-height: 100%;*/
+    min-height: 100%;
+    font-size: 13px;
    font-family: serif;
+
+
 }
 
+body{
+	min-height: 100vh;
+	/*display: flex;
+	flex-direction: column;*/
+	background-image:url("background4.jpeg");
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+
 nav{
-	background-image: url("background4.jpeg");
+/*	background-image: url("background4.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;*/
 }
 
 
 .detail{
-	background-image:url("background4.jpeg");
+	/*background-image:url("background4.jpeg");
 	background-size:cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	/*padding-bottom: 25%;*/
+	/*flex: 1 0 auto;*/
+
 	
 }
 
-.footer{
-	text-align: center;
+.page-footer{
+
 	background-image: url("footerback3.jpg");
+	/*position: absolute;*/
+	/*left: 0;
+    bottom: 0;*/
+	width: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: green;
+	text-align: center
+	font-size: 14px;
+
 	
 }
 
 .image_notification{
-	background-image:url("background4.jpeg");
+/*	background-image:url("background4.jpeg");
 	background-size:cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-attachment: fixed;*/
 }
 
 .title_notification{
-	background-image:url("background4.jpeg");
+/*	background-image:url("background4.jpeg");
 	background-size:cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-attachment: fixed;*/
 }
 
 .notice_detail{
@@ -49,9 +79,11 @@ nav{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	opacity: 0.8;
+	/*padding-bottom:25%;*/
+	/*flex: 1 0 auto;*/
 
 }
-
+/*
 .noice_last{
 	background-image:url("background4.jpeg");
 	background-size:cover;
@@ -59,7 +91,12 @@ nav{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
-
+*/
+.noticeboard_list, .detail_notification,.result_list{
+	/*padding-bottom: 25%;*/
+/*	flex: 1 0 auto;*/
+	opacity: .9;
+}
 
 
 
@@ -95,7 +132,44 @@ nav{
 
 
 
+/*
+@media (max-width: 1200px) {
+  .detail{
+    padding-bottom:150%;
+  }*/
+
+/*@media (max-width: 1200px) {
+  .result_list{
+    padding-bottom:250%;
+  }
+*/
+}
+/*@media (max-width: 1200px) {
+  .resp-iframe{
+    margin-left: 20px;
+  }
+
+}*/
 
 
+.page-footer{
+	background-color: black;
+}
+
+
+.divbody{
+/*	flex:1;
+	 width: 100%;*/
+	 min-height: calc(100vh - 70px);
+
+}
+
+
+
+/*.wrapper{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}*/
 
 

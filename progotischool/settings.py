@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'admission',
     'noticeboard',
     'result',
+    'landin_page',
 ]
 
 MIDDLEWARE = [

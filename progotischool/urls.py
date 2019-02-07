@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
 	# path('admission/',include('admission.urls')),
+    path('',include('landin_page.urls')),
     path('',include('result.urls')),
 	path('',include('noticeboard.urls')),
     path('admin/', admin.site.urls),
