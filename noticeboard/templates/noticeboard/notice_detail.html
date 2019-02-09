@@ -4,7 +4,7 @@
 {%block content%}
 
 <div class="detail_notification">
-	
+
 	<div class="title_notification">
 		<div class="row">
 			<div class="col text-center">
@@ -22,6 +22,13 @@
 			</div>
 		</div>
 	</div>
+	{%else%}
+			<div class="col-9 mx-auto">
+				<img src="{% static 'noticeboard/404-not-found.png' %}" class="img-thumbnail mt-5" alt="Responsive image" style="height:80%; width: 100%">
+			</div>
+			</div>
+		</div>
+	</div>
 	{%endif%}
 
 	
@@ -30,12 +37,20 @@
 			<div class="col-10 offset-1 text-center">
 				<h3>Description:</h3>
 				<p>{{notice.description|linebreaksbr}}</p>
+
 	{%if notice.attachment%}
 				<a href="{%url 'download_url' path=notice.attachment%}">Download</a>
 			</div>
 		</div>
 	</div>
+	{%else%}
+
+			</div>
+		</div>
+	</div>
 	{%endif%}
+
+
 </div>
 
 {%endblock%}
