@@ -3,68 +3,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> 
-  </title>
-  <link rel="stylesheet" href="{% static 'noticeboard/base.css' %}" type="text/css">
-  <link rel="stylesheet" href="{% static 'noticeboard/normalizer.css' %}" type="text/css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<title>	
+	</title>
+	<link rel="stylesheet" href="{% static 'noticeboard/base.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'noticeboard/normalizer.css' %}" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
 
+<div class="wrapper">
+	<!-- nav bar start -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">Progoti School</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	    <div class="navbar-nav">
+	      <a class="nav-item nav-link" href="{%url 'home_url'%}"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+	      <a class="nav-item nav-link" href="{%url 'notice_list_url'%}"><i class="fas fa-bell"></i> Notices</a>
+	      <a class="nav-item nav-link" href="{%url 'result_url'%}"><i class="fas fa-poll-h"></i> Results</a>
+	    </div>
+	  </div>
+	</nav>
 
-  <!-- nav bar start -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Progoti School</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link" href="{%url 'home_url'%}"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="{%url 'notice_list_url'%}"><i class="fas fa-bell"></i> Notices</a>
-        <a class="nav-item nav-link" href="{%url 'result_url'%}"><i class="fas fa-poll-h"></i> Results</a>
-      </div>
-    </div>
-  </nav>
 
+	<!-- nav bar end -->
+	<div class="container-fluid">
+  	<div class="divbody">
+  		{%block content%}
 
-  <!-- nav bar end -->
-  <div class="container-fluid">
-    <div class="divbody">
-      {%block content%}
-
-      {%endblock%}
-    </div>
+  		{%endblock%}
+  	</div>
   </div>
 
-  
+	
 
 <!-- 
 <div class="footer mt-10" id="footerone">
-    
-    <div class="row ">
-      <div class="col offset-1 mt-5">
-        <h3>Our Location</h3>
-        <p>Our location is</p>
-        <p> 32/3 east ahmed nagar</p>
-        <p> mirpur 2 mirpur , Dhaka</p>
-      </div>
+		
+		<div class="row ">
+			<div class="col offset-1 mt-5">
+				<h3>Our Location</h3>
+				<p>Our location is</p>
+				<p> 32/3 east ahmed nagar</p>
+				<p> mirpur 2 mirpur , Dhaka</p>
+			</div>
 
-      <div class="col mt-5">
-        <h3>Contact Us</h3>
-        <p><b>Phone:</b>01770755333</p>
-        <p><b>Email:</b>digantaprotik@gmail.com</p>
-        <p><b>Telephone:</b>01770755333</p>
-      </div>
+			<div class="col mt-5">
+				<h3>Contact Us</h3>
+				<p><b>Phone:</b>01770755333</p>
+				<p><b>Email:</b>digantaprotik@gmail.com</p>
+				<p><b>Telephone:</b>01770755333</p>
+			</div>
 
-      <div class="col mr-3 mt-5">
-        <h3>Coming Soon</h3>
-        <p>More Online Features</p>
-        <p>Admission Online</p>
-        <p>Online Result</p>
-      </div>
-    </div>
+			<div class="col mr-3 mt-5">
+				<h3>Coming Soon</h3>
+				<p>More Online Features</p>
+				<p>Admission Online</p>
+				<p>Online Result</p>
+			</div>
+		</div>
 
 </div> -->
 
@@ -78,14 +78,17 @@
       <div class="row">
 
         <!-- Grid column -->
-        <div class="col-md-6 mt-md-0">
+        <div class="col-md-6 mt-md-0 mt-3">
 
           <!-- Content -->
           <h5 class="text-uppercase"><b>Progoti School</b></h5>
           <p>We Are Always Here</p>
           <p>Visit  Us Personaly </p>
+
         </div>
         <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
 
         <!-- Grid column -->
         <div class="col-md-3 mb-md-0 mb-3">
@@ -109,7 +112,7 @@
           <!-- Grid column -->
 
           <!-- Grid column -->
-          <div class="col-md-3 mb-md-0 ">
+          <div class="col-md-3 mb-md-0 mb-3">
 
             <!-- Links -->
             <h5 class="text-uppercase">Links</h5>
@@ -123,6 +126,9 @@
               </li>
               <li>
                 <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
               </li>
             </ul>
 
@@ -145,6 +151,7 @@
   <!-- Footer -->
 
 
+</div>
 
 </body>
 
