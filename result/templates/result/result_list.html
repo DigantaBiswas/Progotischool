@@ -26,5 +26,36 @@
 		</div>
 {%endfor%}
 	</div>
+
+	<nav aria-label="Page navigation example">
+	  <ul class="pagination justify-content-center">
+	  	{% if results.has_previous %}	
+	    <li class="page-item">
+	      <a class="page-link" href="?page={{ results.previous_page_number }}" >Previous</a>
+	    {%endif%}
+	    </li>
+
+	    {% for num in results.paginator.page_range %}
+			{% ifequal num results.number %}
+			<li class="page-item"><a class="page-link" href="#"><strong>{{ num }}</strong></a></li>
+			{% else %}
+			{% if forloop.counter < 5 %}
+			<li class="page-item"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
+			{% endif %}
+			{% endifequal %}
+	    {% endfor %}
+
+
+	     {% if results.has_next %}
+	    <li class="page-item">
+	      <a class="page-link" href="?page={{ results.next_page_number }}">Next</a>
+	    </li>
+	     {% endif %}
+	  </ul>
+	</nav>
+
 </div>
+
+
+
 {%endblock%}
