@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.shortcuts import render,redirect,get_object_or_404
 from django.utils import timezone 
+from django.utils.encoding import uri_to_iri
 
 from .models import Notice
 # Create your views here.
@@ -17,8 +18,9 @@ def notice_list(request):
     return render(request, 'noticeboard/noticeboard.html',{'notices':notices})
 
 def notice_detail(request, slug):
-	notice = get_object_or_404(Notice, slug=slug)
-	return render(request,'noticeboard/notice_detail.html',{'notice':notice})
+    slug = uri_to_iri(slug)
+    notice = get_object_or_404(Notice, slug=slug)
+    return render(request,'noticeboard/notice_detail.html',{'notice':notice})
 
 
 

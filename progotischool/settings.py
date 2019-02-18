@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'noticeboard',
     'result',
     'landin_page',
+    'teachers',
 ]
 
 MIDDLEWARE = [

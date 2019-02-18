@@ -1,0 +1,208 @@
+
+
+.greetings{
+	
+	margin-top: 60px;
+	font-size: 25px;
+	padding: 2px 10px;
+	
+}
+
+
+
+
+a.btn{
+	margin: 30px 10px;
+	width: 150px;
+	padding: 10px;
+	border-radius: 20px;
+
+}
+
+
+a.btn-fbpage{
+	background-color: darkblue;
+	color: white;
+}
+
+a.btn-youtube{
+	background: red;
+	color: white;
+}
+
+
+a.btn-fbpage:hover{
+	background: darkblue;
+	border: none;
+	color: white;
+	box-shadow:  5px 5px 10px  #999;
+	transition: 0.3s
+}
+
+a.btn-youtube:hover{
+	background: darkred;
+	border: none;
+	color: white;
+	box-shadow:  5px 5px 10px  #999;
+	transition: 0.3s
+}
+
+
+.about{
+	margin-top: 60px;
+	text-align: center;
+
+	
+}
+.about p{
+	margin-top: 60px;
+	font-size: 25px;
+}
+
+.video {
+	margin-top: 60px;
+	}
+
+
+.last_notification{
+	margin-top: 50px;
+}
+
+
+.teacherfront{
+	margin-top: 80px;
+	
+	
+}
+
+.text-teachername{
+	font-size: 35px;
+}
+
+.text-say{
+	font-size: 25px;
+
+}
+
+
+
+
+
+
+
+/*these are extra*/
+
+
+
+html {
+    /*position: relative;
+    min-height: 100%;*/
+   min-height: 100%;
+   font-size: 13px;
+   font-family: Garamond;
+
+
+}
+
+body{
+	min-height: 100vh;
+	/*display: flex;
+	flex-direction: column;*/
+	background-image:url("background4.jpeg");
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+
+}
+
+
+
+
+
+
+.page-footer{
+
+/*	background-image: url("footerback3.jpg");
+	position: absolute;
+	left: 0;
+    bottom: 0;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	background-color: #292b2c;
+	color: green;
+	text-align: center
+	font-size: 14px;
+	
+
+
+	
+}
+
+
+.notice_detail{
+	background-image:url("background4.jpeg");
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	opacity: 0.8;
+	/*padding-bottom:25%;*/
+	/*flex: 1 0 auto;*/
+
+}
+
+.noticeboard_list, .detail_notification,.result_list{
+	/*padding-bottom: 25%;*/
+/*	flex: 1 0 auto;*/
+	opacity: .9;
+}
+
+
+
+
+
+
+
+
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+.divbody{
+
+	 min-height: calc(100vh - 70px);
+
+}
+
+
+

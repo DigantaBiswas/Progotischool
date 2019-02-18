@@ -4,7 +4,7 @@
 {%block content%}
 <div class="result_list">
 	<div class="row mt-2">
-		<div class="col-3 offset-4">
+		<div class="col-lg-3 col-sm-6 col-xsm-6 offset-4">
 			<form class="navbar-form navbar-left" method="get" action="{% url 'result_search_url'  %}" role="search"> {% csrf_token %} 
 			  <div class="form-group">
 			    <input type="text" class="form-control" placeholder="Search" name="search">

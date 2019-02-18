@@ -1,0 +1,49 @@
+{%extends 'noticeboard/base.html'%}
+{%load static%}
+
+{%block content%}
+{%if teachers%}
+
+<div class="teachers_box">
+
+	<div class="row justify-content-center">
+		<div class="col-6">
+			<h1>Our Honorable Teachers</h1>
+			<h3>Check Out What Our Teachers Have To Say</h3>
+		</div>
+	</div>
+
+	<div class="row mt-5">
+{%for teacher in teachers%}
+		<!-- <div class="col-4">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="{{teacher.picture.url}}" alt="Card image cap">
+			  <div class="card-body">
+			  	<p>Name:{{teacher.name}}</p>
+			  	<p>Contact:{{teacher.contact}}</p>
+			    <p class="card-text">{{teacher.bio|linebreaksbr}}</p>
+			  </div>
+			</div>
+		</div> -->
+	<div class="teacher-box mt-5">
+		<div class="row">
+			<div class="col-lg-2 col-xsm-2 col-sm-2 col-md-2">
+				<img src="{{teacher.picture.url}}" class="image-responsive img-thumbnail" >
+			</div>
+			<div class="col-lg-8 col-xsm-4 col-sm-6">
+				<p class="text-teachername">{{teacher.name}}</p>
+				<p>Contact:{{teacher.contact}}</p>
+				<p class="text-say">{{teacher.bio|linebreaksbr}}</p>
+			</div>
+		</div>
+		<hr>
+	</div>
+
+
+
+{%endfor%}	
+	</div>	
+</div>
+
+{%endif%}
+{%endblock%}

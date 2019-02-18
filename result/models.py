@@ -7,7 +7,7 @@ from .utils import get_unique_slug
 # Create your models here.
 class Results(models.Model):
 	result_of = models.CharField(max_length=100)
-	file = models.FileField(blank=True, null = True, upload_to = 'result_files')
+	file = models.FileField(blank=True, null = True, upload_to = 'result_files/%Y/%m/%d')
 	upload_date = models.DateTimeField(auto_now = True)
 	slug = models.SlugField(max_length=40,unique=True,blank=True,allow_unicode=True)
 

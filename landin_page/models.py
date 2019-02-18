@@ -7,18 +7,13 @@ class Homepage_content(models.Model):
 	slide_pic2 =models.ImageField(upload_to='slides_images/')
 	slide_pic3 =models.ImageField(upload_to='slides_images/')
 
+	welcome_image = models.ImageField(upload_to='slides_images/')
+
 	first_block_h1 = models.CharField(max_length=50,default=0)
-	first_block_h2 = models.CharField(max_length=50,default=0)
 	first_block_p = models.TextField(default=0)
 
-	second_block_h1 = models.CharField(max_length=50,default=0)
-	second_block_p = models.TextField(default=0)
 	second_block_link = models.URLField(default=0)
-
-	third_block_h1 = models.CharField(max_length=50,default=0)
-	third_block_p = models.TextField(default=0)
-	third_block_link = models.URLField(default=0)
-
+	
 
 	def __str__(self):
 		return self.name

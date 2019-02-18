@@ -24,9 +24,9 @@ urlpatterns = [
     path('',include('landin_page.urls')),
     path('',include('result.urls')),
 	path('',include('noticeboard.urls')),
+    path('',include('teachers.urls')),
     path('admin/', admin.site.urls),
 ]
-
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

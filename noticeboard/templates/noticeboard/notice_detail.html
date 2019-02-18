@@ -17,14 +17,14 @@
 	{%if notice.picture%}
 	<div class="image_notification">
 		<div class="row ">
-			<div class="col-9 mx-auto">
+			<div class="col-lg-6 col-sm-6 mx-auto">
 				<img src="{{notice.picture.url}}" class="img-thumbnail mt-5" alt="Responsive image" style="height:80%; width: 100%">
 			</div>
 		</div>
 	</div>
 	{%else%}
 			<div class="col-9 mx-auto">
-				<img src="{% static 'noticeboard/404-not-found.png' %}" class="img-thumbnail mt-5" alt="Responsive image" style="height:80%; width: 100%">
+				<img src="{% static 'noticeboard/404-not-found.jpg' %}" class="img-thumbnail mt-5" alt="Responsive image" style="height:80%; width: 100%">
 			</div>
 			</div>
 		</div>
